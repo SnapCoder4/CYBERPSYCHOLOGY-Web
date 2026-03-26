@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CyberCheck — Jangan Self-Diagnosa Dulu!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-logo">
+        <span class="logo-icon">🧠</span>
+        <span class="logo-text">CyberCheck</span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Beranda</a></li>
+        <li><a href="#about" class="nav-link">Tentang</a></li>
+        <li><a href="#tips" class="nav-link">Tips Sehat</a></li>
+        <li><a href="#quiz-section" class="nav-link">Cek Dirimu</a></li>
+      </ul>
+      <button class="nav-cta" onclick="scrollToQuiz()">Mulai Cek →</button>
+      <button
+        class="dark-toggle"
+        id="darkToggle"
+        aria-label="Toggle dark mode"
+        title="Toggle dark mode"
+      >
+        🌙
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- SECTION 1: HERO / HOME -->
+    <section class="hero-section" id="home">
+      <div class="hero-bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-badge">🔍 Untuk Mahasiswa Indonesia</div>
+        <h1 class="hero-title">
+          Udah Googling Gejala<br />
+          <em>Lagi?</em>
+        </h1>
+        <p class="hero-subtitle">
+          Sakit kepala → tumor otak. Capek → kanker. Jantung berdegup → serangan
+          jantung.<br />
+          Kalau kamu relate, kamu mungkin mengalami
+          <strong>Cyberchondria</strong> — dan kamu nggak sendirian.
+        </p>
+        <div class="hero-actions">
+          <button class="btn-primary" onclick="scrollToQuiz()">
+            Cek Kondisiku Sekarang →
+          </button>
+          <a href="#about" class="btn-ghost">Pelajari Lebih Lanjut</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-pill">
+            😰 1 dari 3 mahasiswa over-googling gejala
+          </div>
+          <div class="stat-pill">
+            📱 Rata-rata 2x/minggu mencari penyakit online
+          </div>
+          <div class="stat-pill">💚 Kamu bisa belajar berhenti</div>
+        </div>
+      </div>
+      <div class="hero-illustration">
+        <div class="phone-mockup">
+          <div class="phone-screen">
+            <div class="search-bar">
+              <span>🔍</span>
+              <span class="typing-text" id="typingText"
+                >sakit kepala tiba-tiba...</span
+              >
+            </div>
+            <div class="search-results">
+              <div class="result-item scary">⚠️ Tumor otak</div>
+              <div class="result-item scary">⚠️ Aneurisma</div>
+              <div class="result-item scary">⚠️ Meningitis</div>
+              <div class="result-item calm">💚 ...atau dehidrasi biasa</div>
+            </div>
+            <div class="anxiety-meter">
+              <span>Anxiety level:</span>
+              <div class="meter-bar"><div class="meter-fill"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: ABOUT -->
+    <section class="about-section" id="about">
+      <div class="section-container">
+        <div class="section-label">Apa Itu Cyberchondria?</div>
+        <h2 class="section-title">
+          Bukan Lebay — Ini Kondisi<br /><em>Psikologis Nyata</em>
+        </h2>
+        <p class="section-intro">
+          Cyberchondria adalah kebiasaan mencari informasi kesehatan secara
+          berulang di internet yang justru meningkatkan kecemasan, bukan
+          meredakannya. Ini umum terjadi pada mahasiswa yang terpapar banyak
+          konten kesehatan online.
+        </p>
+
+        <div class="cards-grid">
+          <div class="info-card" data-delay="0">
+            <div class="card-icon">🔄</div>
+            <h3>Siklus yang Menjebak</h3>
+            <p>
+              Rasa cemas → googling → hasil menakutkan → lebih cemas → googling
+              lagi. Loop ini sulit berhenti sendiri.
+            </p>
+          </div>
+          <div class="info-card" data-delay="100">
+            <div class="card-icon">📱</div>
+            <h3>Dipicu Algoritma</h3>
+            <p>
+              Platform digital memprioritaskan konten yang sensasional dan
+              menakutkan karena lebih banyak diklik — meski tidak akurat.
+            </p>
+          </div>
+          <div class="info-card" data-delay="200">
+            <div class="card-icon">🧪</div>
+            <h3>Bukan Hipokondria</h3>
+            <p>
+              Cyberchondria spesifik pada pencarian online. Kamu bisa baik-baik
+              saja di dunia nyata tapi tetap terjebak di dunia maya.
+            </p>
+          </div>
+          <div class="info-card" data-delay="300">
+            <div class="card-icon">🎓</div>
+            <h3>Mahasiswa Rentan</h3>
+            <p>
+              Tekanan akademik, kurang tidur, dan akses internet 24/7 membuat
+              mahasiswa lebih mudah jatuh ke pola ini.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: TIPS -->
+    <section class="tips-section" id="tips">
+      <div class="section-container">
+        <div class="section-label">Tips Sehat Digital</div>
+        <h2 class="section-title">Cara Putus dari<br /><em>Dr. Google</em></h2>
+
+        <div class="tips-layout">
+          <div class="tips-list">
+            <div class="tip-item">
+              <div class="tip-number">01</div>
+              <div class="tip-content">
+                <h4>Tunggu 24 Jam</h4>
+                <p>
+                  Sebelum mulai googling gejala, tunggu dulu satu hari. Banyak
+                  gejala ringan hilang sendiri.
+                </p>
+              </div>
+            </div>
+            <div class="tip-item">
+              <div class="tip-number">02</div>
+              <div class="tip-content">
+                <h4>Batasi Sumber Informasi</h4>
+                <p>
+                  Kalau harus mencari, pakai sumber terpercaya seperti Kemenkes
+                  RI atau WebMD — bukan forum random.
+                </p>
+              </div>
+            </div>
+            <div class="tip-item">
+              <div class="tip-number">03</div>
+              <div class="tip-content">
+                <h4>Grounding Technique</h4>
+                <p>
+                  Saat cemas, coba teknik 5-4-3-2-1: sebutkan 5 hal yang kamu
+                  lihat, 4 yang kamu sentuh, dst.
+                </p>
+              </div>
+            </div>
+            <div class="tip-item">
+              <div class="tip-number">04</div>
+              <div class="tip-content">
+                <h4>Bicara ke Konselor</h4>
+                <p>
+                  Kampus punya layanan konseling gratis. Jangan ragu menggunakan
+                  fasilitas yang sudah tersedia.
+                </p>
+              </div>
+            </div>
+            <div class="tip-item">
+              <div class="tip-number">05</div>
+              <div class="tip-content">
+                <h4>Digital Detox Mingguan</h4>
+                <p>
+                  Coba satu hari per minggu tanpa googling apapun tentang
+                  kesehatan. Rasakan bedanya.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="tips-visual">
+            <div class="do-dont">
+              <div class="do-box">
+                <h4>✅ Lakukan</h4>
+                <ul>
+                  <li>Konsultasi dokter langsung</li>
+                  <li>Bicara ke teman/keluarga</li>
+                  <li>Olahraga & tidur cukup</li>
+                  <li>Mindfulness 5 menit/hari</li>
+                  <li>Journaling perasaan</li>
+                </ul>
+              </div>
+              <div class="dont-box">
+                <h4>❌ Hindari</h4>
+                <ul>
+                  <li>Self-diagnosa dari Google</li>
+                  <li>Forum kesehatan anonim</li>
+                  <li>Googling di malam hari</li>
+                  <li>Membandingkan gejala</li>
+                  <li>Panik sebelum periksa</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: QUIZ -->
+    <section class="quiz-section" id="quiz-section">
+      <div class="quiz-container" id="quizContainer">
+        <!-- QUIZ INTRO -->
+        <div class="quiz-intro" id="quizIntro">
+          <div class="quiz-intro-badge">🩺 Self-Check Tool</div>
+          <h2>
+            Seberapa Sering Kamu<br /><em>Overthinking Soal Kesehatan?</em>
+          </h2>
+          <p>
+            Quiz ini bukan diagnosis medis — tapi bisa membantu kamu mengenali
+            polamu. Jawab dengan jujur, tidak ada jawaban yang salah.
+          </p>
+          <div class="quiz-meta">
+            <span>📋 20 Pertanyaan</span>
+            <span>⏱ ~5 Menit</span>
+            <span>🔒 Privat & Anonim</span>
+          </div>
+          <button class="btn-primary large" onclick="startQuiz()">
+            Mulai Sekarang →
+          </button>
+        </div>
+
+        <!-- QUIZ QUESTIONS -->
+        <div class="quiz-questions hidden" id="quizQuestions">
+          <div class="quiz-header">
+            <div class="quiz-progress-info">
+              <span id="questionCounter">Pertanyaan 1 dari 20</span>
+              <span id="progressPercent">0%</span>
+            </div>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar-fill" id="progressBar"></div>
+            </div>
+          </div>
+
+          <div class="question-card" id="questionCard">
+            <p class="question-text" id="questionText"></p>
+            <div class="options-grid" id="optionsGrid"></div>
+          </div>
+
+          <div class="quiz-nav">
+            <button
+              class="btn-nav prev"
+              id="prevBtn"
+              onclick="prevQuestion()"
+              disabled
+            >
+              ← Sebelumnya
+            </button>
+            <button class="btn-nav next" id="nextBtn" onclick="nextQuestion()">
+              Selanjutnya →
+            </button>
+          </div>
+        </div>
+
+        <!-- RESULT -->
+        <div class="quiz-result hidden" id="quizResult">
+          <div class="result-icon" id="resultIcon"></div>
+          <div class="result-label" id="resultLabel"></div>
+          <h2 class="result-title" id="resultTitle"></h2>
+          <p class="result-desc" id="resultDesc"></p>
+          <div class="result-score-wrap">
+            <div class="score-ring">
+              <svg viewBox="0 0 120 120">
+                <circle class="ring-bg" cx="60" cy="60" r="50" />
+                <circle
+                  class="ring-fill"
+                  id="ringFill"
+                  cx="60"
+                  cy="60"
+                  r="50"
+                />
+              </svg>
+              <div class="score-text" id="scoreText"></div>
+            </div>
+          </div>
+          <div class="result-tips" id="resultTips"></div>
+          <div class="result-actions">
+            <button class="btn-primary" onclick="retakeQuiz()">
+              Ulangi Quiz
+            </button>
+            <a href="#tips" class="btn-ghost" onclick="closeResult()"
+              >Lihat Tips Sehat</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="logo-icon">🧠</span>
+          <span class="logo-text">CyberCheck</span>
+          <p>Platform edukasi Cyberpsychology untuk mahasiswa Indonesia.</p>
+          <small>Dibuat untuk UTS PSL04 — Cyberpsychology 2025/2026</small>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h5>Navigasi</h5>
+            <a href="#home">Beranda</a>
+            <a href="#about">Tentang</a>
+            <a href="#tips">Tips Sehat</a>
+            <a href="#quiz-section">Cek Dirimu</a>
+          </div>
+          <div class="footer-col">
+            <h5>Referensi</h5>
+            <a href="#">Whitty & Young (2017)</a>
+            <a href="#">Starcevic (2013)</a>
+            <a href="#">Kemenkes RI</a>
+            <a href="#">WHO Mental Health</a>
+          </div>
+          <div class="footer-col">
+            <h5>Bantuan</h5>
+            <a href="#">Konseling Kampus</a>
+            <a href="#">Into The Light ID</a>
+            <a href="#">Yayasan Pulih</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          ⚠️ Website ini bukan alat diagnosis medis. Selalu konsultasikan
+          kondisi kesehatanmu ke tenaga medis profesional.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
