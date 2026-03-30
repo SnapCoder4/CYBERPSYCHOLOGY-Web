@@ -126,7 +126,7 @@ const questions = [
     text: "Saya merasa memiliki gejala yang saya baca setelah mencari informasi kesehatan di internet",
   },
   {
-    text: "Apakah kamu merasa lebih cemas setelah mencari gejala kesehatan di internet daripada sebelumnya?",
+    text: "Saya merasa lebih cemas setelah mencari informasi kesehatan di internet",
   },
   {
     text: "Seberapa sering kamu memeriksa gejala fisik yang sama lebih dari sekali dalam satu hari?",
