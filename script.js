@@ -120,10 +120,10 @@ document
 // ── QUIZ DATA ────────────────────────────────────────────────────
 const questions = [
   {
-    text: "Ketika kamu merasakan sakit kepala, seberapa sering kamu langsung mencari penyebabnya di Google?",
+    text: "Saya langsung mencari penyebab di Google ketika merasakan sakit kepala",
   },
   {
-    text: "Setelah membaca artikel kesehatan online, apakah kamu merasa gejala yang disebutkan ada pada dirimu?",
+    text: "Saya merasa memiliki gejala yang saya baca setelah mencari informasi kesehatan di internet",
   },
   {
     text: "Apakah kamu merasa lebih cemas setelah mencari gejala kesehatan di internet daripada sebelumnya?",
