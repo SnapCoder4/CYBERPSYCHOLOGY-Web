@@ -135,10 +135,10 @@ const questions = [
     text: "Apakah kamu pernah tidak bisa tidur karena memikirkan penyakit yang kamu temukan saat googling?",
   },
   {
-    text: "Saat merasakan sesuatu yang tidak biasa di tubuhmu, seberapa cepat kamu membuka Google atau WebMD?",
+    text: "Saya segera mencari informasi di Google atau WebMD ketika merasakan sesuatu yang tidak biasa di tubuh saya",
   },
   {
-    text: "Apakah kamu lebih percaya hasil pencarian Google daripada saran dokter atau tenaga medis?",
+    text: "Saya lebih percaya hasil pencarian di Google dibandingkan saran dokter atau tenaga medis",
   },
   {
     text: "Apakah kamu pernah menghindari aktivitas karena takut dengan penyakit yang kamu temukan online?",
@@ -159,25 +159,25 @@ const questions = [
     text: "Seberapa sering kamu mencari second opinion medis dari internet setelah berkonsultasi dengan dokter?",
   },
   {
-    text: "Apakah kamu merasa pencarian kesehatan online membuatmu lebih paham kondisi tubuhmu, atau justru lebih bingung?",
+    text: "Saya merasa lebih bingung setelah mencari informasi kesehatan di internet",
   },
   {
-    text: "Apakah kamu merasa sulit untuk berhenti membaca artikel atau forum kesehatan meski sudah sangat cemas?",
+    text: "saya merasa sulit untuk berhenti membaca artikel atau forum kesehatan meski sudah sangat cemas",
   },
   {
     text: "Seberapa sering kamu meminta orang terdekat untuk meyakinkanmu bahwa kamu baik-baik saja setelah googling?",
   },
   {
-    text: "Apakah aktivitas mencari gejala di internet menghabiskan lebih dari 30 menit waktumu dalam sehari?",
+    text: "Saya menghabiskan lebih dari 30 menit dalam sehari untuk mencari informasi kesehatan di internet",
   },
   {
     text: "Seberapa sering kamu merasa gejala baru muncul setelah kamu membaca tentang penyakit tertentu online?",
   },
   {
-    text: "Apakah kamu merasa perlu untuk memverifikasi kondisi kesehatanmu lewat internet meski dokter sudah bilang kamu sehat?",
+    text: "Saya tetap mencari informasi kesehatan di internet meskipun dokter telah menyatakan bahwa saya sehat",
   },
   {
-    text: "Secara keseluruhan, apakah kebiasaan mencari informasi kesehatan online membuatmu lebih khawatir tentang kesehatanmu?",
+    text: "Saya merasa lebih khawatir tentang kondisi kesehatan saya setelah mencari informasi kesehatan di internet",
   },
 ];
 
